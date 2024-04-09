@@ -32,6 +32,8 @@ class EmailPersonalizationAgents():
                 """,
             verbose=True,
             llm=self.llm,
+            
+            #avoid that agents focus on core tasks, and let them focus on personalization
             max_iter=2,
         )
 
